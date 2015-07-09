@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<!--
+	Fractal by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Convert some SQL</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+</head>
+
+<body id="top">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="content">
+			<h1><a href="#">Convert Commandline SQL to ... SQL</a></h1>
+			<p>Enter your sql output below:</p>
+			<form method="POST">
+				<div>
+					<textarea rows="7" name="clsql" style="font-family:mono;font-size:12px;">{{.RawSQL}}</textarea>
+				</div>
+				<br/>
+				<ul class="actions">
+					<li>
+						<button type="submit" class="button icon fa-chevron-down special">Convert</button>
+					</li>
+				</ul>
+			</form>
+			<textarea rows="7" name="converted">{{.ConvertedSQL}}</textarea>
+		</div>
+	</header>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<p>
+			This is just something I whipped up quickly, so save some time when mucking around with the mysql command prompt. It doesn't check for errors or mismatched fields to values. It just formats stuff.<br>
+			The code is open source - feel free to tinker. Its at <a href="https://github.com/ae0000/commandline-sql-to-sql">github.com/ae0000/commandline-sql-to-sql</a>
+		</p>
+		<ul class="icons">
+			<li>
+				<a href="https://github.com/ae0000" class="icon fa-facebook">
+					<span class="label">Github</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/ae0000" class="icon fa-twitter">
+					<span class="label">Twitter</span>
+				</a>
+			</li>
+		</ul>
+		<p class="copyright">&copy; Andrew Edwards. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+	</footer>
+
+</body>
+
+</html>
